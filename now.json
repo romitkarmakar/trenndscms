@@ -1,10 +1,16 @@
 {
 	"build": {
 		"env": {
-			"MONGODB_URL": "@mongodb_url"
+			"MONGODB_URL": "@mongodb_url",
+			"TRENNDSCMS_BASE_URL": "@trenndscms_base_url",
+			"CLOUDINARY_CLOUD_NAME": "@cloudinary_cloud_name",
+			"CLOUDINARY_UPLOAD_PRESET": "@cloudinary_upload_preset"
 		}
 	},
 	"env": {
-		"MONGODB_URL": "@mongodb_url"
+		"MONGODB_URL": "@mongodb_url",
+		"TRENNDSCMS_BASE_URL": "@trenndscms_base_url",
+		"CLOUDINARY_CLOUD_NAME": "@cloudinary_cloud_name",
+		"CLOUDINARY_UPLOAD_PRESET": "@cloudinary_upload_preset"
 	}
 }
