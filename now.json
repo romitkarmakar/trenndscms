@@ -1,0 +1,10 @@
+{
+	"build": {
+		"env": {
+			"MONGODB_URL": "@mongodb_url"
+		}
+	},
+	"env": {
+		"MONGODB_URL": "@mongodb_url"
+	}
+}

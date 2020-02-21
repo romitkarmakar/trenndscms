@@ -1,4 +1,4 @@
-# TrenndsCMS
+![header_image](public/header.jpg)
 
 A Blog managment system for companies, based on nextjs powerful serverless site rendering and MongoDB for database management.
 
