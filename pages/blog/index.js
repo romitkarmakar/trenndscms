@@ -7,13 +7,10 @@ import {
   Card,
   CardContent,
   CardHeader,
-  CardMedia,
-  CardActions,
-  Button
+  CardMedia
 } from "@material-ui/core";
 import axios from "axios";
-import Layout from "../components/layout";
-import Link from "next/link";
+import Layout from "../../components/layout";
 
 const styles = theme => ({
   media: {
@@ -22,7 +19,7 @@ const styles = theme => ({
   }
 });
 
-class IndexPage extends React.Component {
+class BlogPage extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -41,21 +38,14 @@ class IndexPage extends React.Component {
             <Grid item xs={12} lg={8}>
               <Card>
                 <CardHeader title={v.title} />
-                {v.image != "" && v.image ? (
-                  <CardMedia
-                    className={classes.media}
-                    image={v.image}
-                    title={v.title}
-                  />
-                ) : null}
+                {v.image != "" && v.image ? <CardMedia
+                  className={classes.media}
+                  image={v.image}
+                  title={v.title}
+                /> : null}
                 <CardContent>
                   <Typography>{v.content}</Typography>
                 </CardContent>
-                <CardActions>
-                  <Link href={"/blog/" + v.slug}>
-                    <Button color="primary">Read more</Button>
-                  </Link>
-                </CardActions>
               </Card>
             </Grid>
           ))}
@@ -65,4 +55,4 @@ class IndexPage extends React.Component {
   }
 }
 
-export default withStyles(styles)(IndexPage);
+export default withStyles(styles)(BlogPage);
