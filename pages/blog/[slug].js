@@ -16,6 +16,9 @@ const styles = theme => ({
   media: {
     height: 0,
     paddingTop: "56.25%" // 16:9
+  },
+  heading: {
+    marginBottom: theme.spacing(2)
   }
 });
 
@@ -38,19 +41,17 @@ class BlogSlugPage extends React.Component {
       <Layout>
         <Grid container justify="center">
           <Grid item xs={12} lg={10}>
-            <Card>
-              <CardHeader title={this.props.blog.title} />
-              {this.props.blog.image != "" && this.props.blog.image ? (
-                <CardMedia
-                  className={classes.media}
-                  image={this.props.blog.image}
-                  title={this.props.blog.title}
-                />
-              ) : null}
-              <CardContent>
-                <Typography>{this.props.blog.content}</Typography>
-              </CardContent>
-            </Card>
+            <Typography variant="h2" component="h2" className={classes.heading}>{this.props.blog.title}</Typography>
+            {this.props.blog.image != "" && this.props.blog.image ? (
+              <CardMedia
+                className={classes.media}
+                image={this.props.blog.image}
+                title={this.props.blog.title}
+              />
+            ) : null}
+            <CardContent>
+              <Typography>{this.props.blog.content}</Typography>
+            </CardContent>
           </Grid>
         </Grid>
       </Layout>

@@ -39,8 +39,9 @@ class AdminCreatePage extends React.Component {
   }
 
   slugGenerator(s) {
+    s = s.trim();
     s = s.toLowerCase();
-    s = s.replace(" ", "-");
+    s = s.split(" ").join("-");
     return s;
   }
 

@@ -10,8 +10,10 @@
   "dependencies": {
     "@material-ui/core": "^4.9.3",
     "@material-ui/icons": "^4.9.1",
+    "argon2": "^0.26.0",
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.5.3",
     "next": "9.2.2",
     "react": "16.12.0",
