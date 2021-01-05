@@ -11,7 +11,7 @@
     "@material-ui/core": "^4.9.3",
     "@material-ui/icons": "^4.9.1",
     "argon2": "^0.26.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.5.3",
